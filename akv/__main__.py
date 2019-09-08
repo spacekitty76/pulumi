@@ -3,11 +3,11 @@ from pulumi import ResourceOptions
 from pulumi_azure.core import ResourceGroup
 from pulumi_azure import keyvault
 
-tenant = <tenant here>
+tenant = <>
 
 resource_group = ResourceGroup("acl-rg", name="acl-rg", location="westus")
 
-trusted_networkds = <ip addresses here>
+trusted_networkds = <>
 
 acls = {"bypass": "AzureServices", "defaultAction": "Deny", "ipRules": trusted_networkds }
 
